@@ -18,16 +18,39 @@ $ cd <my-app>
 $ ng serve
 $ ng test
 ```
+* component
+  * anatomy
+    - ts class
+    - html template
+    - css styles
+  - selector
+  - properties
+  - interpolation
 * ng generate command
-  - components
-  - directives
-  - pipes
-- components
+  - component
+  - directive
+  - pipe
+  - service
+  - class
+  - guard
+  - interface
+  - enum
+  - module
+- compose components
 ```
 $ ng generate component components/<name>
+$ ng generate --inline-template component components/<name>
 $ ng generate --skip-tests component components/<name>
 ```
 * routing
   - navigation component
   - route definition
   - RouterLink directive
+* components
+  * passing data
+    - data flow
+    - @Input
+- compose interfaces
+```
+$ ng generate interface interfaces/<name>
+```
