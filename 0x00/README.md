@@ -66,11 +66,15 @@ $ ng generate --skip-tests component components/<name>
 * components
   * passing data
     - @input
-* routing
-  - navigation component
-  - route definition
-  - RouterLink directive
+    - @output
 - compose interfaces
 ```
 $ ng generate interface interfaces/<name>
 ```
+* routing
+  - navigation component
+  - route definition
+  - RouterLink directive
+  - redirectTo
+  - 404 page
+  - page title
