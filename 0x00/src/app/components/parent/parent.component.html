@@ -1,4 +1,8 @@
 <section>
   <p>parent works!</p>
-  <app-child frameworkName="angular"></app-child>
+  <app-child
+    frameworkName="angular"
+    (addNumberEvent)="addNumber($event)"
+  ></app-child>
+  <p>Numbers: {{ numbers.length }}</p>
 </section>

@@ -8,4 +8,10 @@ import { ChildComponent } from '../child/child.component';
   templateUrl: './parent.component.html',
   styleUrl: './parent.component.css',
 })
-export class ParentComponent {}
+export class ParentComponent {
+  numbers: number[] = new Array();
+
+  addNumber(n: number) {
+    this.numbers.push(n);
+  }
+}

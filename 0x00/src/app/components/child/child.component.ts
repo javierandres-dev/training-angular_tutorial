@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -9,4 +9,12 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
   @Input() frameworkName: string = '';
+  @Output() addNumberEvent = new EventEmitter<number>();
+
+  num: number = 0;
+
+  addNumber() {
+    this.num++;
+    this.addNumberEvent.emit(this.num);
+  }
 }
