@@ -33,7 +33,7 @@ export class TutorialPageComponent {
 
   myEmployee: Employee = {
     id: '1',
-    firstName: 'Mike',
-    lastName: 'Smith',
+    firstName: 'Anne',
+    lastName: 'Doe',
   };
 }

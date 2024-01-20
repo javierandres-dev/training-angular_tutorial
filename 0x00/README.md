@@ -33,20 +33,6 @@ $ cd <my-app>
 $ ng serve
 $ ng test
 ```
-* component
-  * anatomy
-    - ts class
-    - html template
-    - css styles
-  - selector
-  - properties
-  - interpolation
-* components
-  * data flow
-    - @if
-    - @for
-  - property binding
-  - event handling
 * ng generate command
   - component
   - directive
@@ -57,12 +43,27 @@ $ ng test
   - interface
   - enum
   - module
+* component
+  * anatomy
+    - ts class
+    - html template
+    - css styles
+  - selector
+  - properties
+  - interpolation
 - compose components
 ```
 $ ng generate component components/<name>
 $ ng generate --inline-template component components/<name>
 $ ng generate --skip-tests component components/<name>
 ```
+* components
+  * data flow
+    - @if
+    - @for
+  - property binding
+  - event handling
+  - deferrable views
 * components
   * passing data
     - @input
