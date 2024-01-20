@@ -26,6 +26,12 @@ $ ng test
   - selector
   - properties
   - interpolation
+* components
+  * data flow
+    - @if
+    - @for
+  - property binding
+  - event handling
 * ng generate command
   - component
   - directive
@@ -42,14 +48,13 @@ $ ng generate component components/<name>
 $ ng generate --inline-template component components/<name>
 $ ng generate --skip-tests component components/<name>
 ```
+* components
+  * passing data
+    - @input
 * routing
   - navigation component
   - route definition
   - RouterLink directive
-* components
-  * passing data
-    - data flow
-    - @Input
 - compose interfaces
 ```
 $ ng generate interface interfaces/<name>
