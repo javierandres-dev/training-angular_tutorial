@@ -1,2 +1,48 @@
 <p>tutorial-page works!</p>
+<h2>component</h2>
+<section>
+  <p>City: {{ city }}</p>
+  <p>1 + 1 = {{ 1 + 1 }}</p>
+</section>
+<h2>control flow</h2>
+<section>
+  @if (isLoggedIn) {
+  <p>you are logged</p>
+  }@else {
+  <p>you are not logged</p>
+  }
+  <ul>
+    @for (framework of frameworks; track $index) {
+    <li>{{ framework }} {{ $index + 1 }}</li>
+    }
+  </ul>
+  <ul>
+    @for (student of students; track student.id) {
+    <li>{{ student.name }}</li>
+    }
+  </ul>
+</section>
+<h2>property binding</h2>
+<section>
+  <div [contentEditable]="isEditable">...div...</div>
+</section>
+<h2>event handling</h2>
+<section>
+  <button (click)="handleClick()">click me</button>
+  <span class="box bg-yellow" (mouseover)="handleMouseover()">...span...</span>
+</section>
+<h2>data flow</h2>
 <app-parent></app-parent>
+<h2>interfaces</h2>
+<section>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>FULL NAME</th>
+    </tr>
+    <tr>
+      <td>{{ myEmployee.id }}</td>
+      <td>{{ myEmployee.firstName }} {{ myEmployee.lastName }}</td>
+    </tr>
+  </table>
+</section>
